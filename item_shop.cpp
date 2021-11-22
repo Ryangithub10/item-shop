@@ -80,6 +80,57 @@ int main()
 					break;
 			}
 			break;
+
+		case '2':
+			puts("what do you want\n");
+
+			puts("1. stamina capsul pouch");
+			puts("2. ring exp");
+			puts("3. digital vest");
+			puts("4. heavy armor\n");
+
+			cout << ':';
+			cin >> buyA;
+
+			switch(buyA)
+			{
+				case '1':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+					
+					printf("*you buy %d stamina capsul pouch with price DRP.%d\n\n", quantity, quantity * 10000);
+					break;
+
+				case '2':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+					
+					printf("*you buy %d ring exp with price DRP.%d\n\n", quantity, quantity * 5000);
+					break;
+
+				case '3':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+					
+					printf("*you buy %d digital vest with price DRP.%d\n\n", quantity, quantity * 10000);
+					break;
+
+				case '4':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+					
+					printf("*you buy %d heavy armor with price DRP.%d\n\n", quantity, quantity * 8000);
+					break;
+			}
+			break;
 	}
 
 	puts("have the nice day!");
