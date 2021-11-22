@@ -39,11 +39,50 @@ int main()
 					
 					cout << ':';
 					cin >> quantity;
-					int total = quantity * 1000;
+					
+					printf("*you buy %d health capsul with price DRP.%d\n\n", quantity, quantity * 1000);
+					break;
 
-					printf("*you buy %d health capsul with price DRP.%d\n", quantity, total);
+				case '2':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+
+					printf("*you buy %d stamina capsul with price DRP.%d\n\n", quantity, quantity * 2000);
+					break;
+
+				case '3':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;	
+
+					printf("*you buy %d instant noodles with price DRP.%d\n\n", quantity, quantity * 10000);
+					break;
+
+				case '4':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+
+					printf("*you buy %d energy drink with price DRP.%d\n\n", quantity, quantity * 15000);
+					break;
+					
+				case '5':
+					puts("how many do you want\n");
+
+					cout << ':';
+					cin >> quantity;
+					
+					printf("*you buy %d revive chip with price DRP.%d\n\n", quantity, quantity * 50000);
+					break;
 			}
+			break;
 	}
+
+	puts("have the nice day!");
 
 	return 0;
 }
