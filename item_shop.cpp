@@ -7,6 +7,8 @@ int main()
 	char buyI;
 	char buyA;
 	char buyW;
+	char con;
+	char con2;
 	int quantity;
 
 	puts("welcome in our store, what do you buy it\n");
@@ -23,11 +25,11 @@ int main()
 		case '1':
 			puts("what do you want");
 			
-			puts("1. health capsul");
-			puts("2. stamina capsul");
-			puts("3. instant noodles");
-			puts("4. energy drink");
-			puts("5. revive chip\n");
+			puts("1. health capsul\t price: 1000");
+			puts("2. stamina capsul\t price: 2000");
+			puts("3. instant noodles\t price: 10000");
+			puts("4. energy drink\t\t price: 15000");
+			puts("5. revive chip\t\t price: 50000\n");
 
 			cout << ':';
 			cin >> buyI;
@@ -35,12 +37,34 @@ int main()
 			switch(buyI)
 			{
 				case '1':
-					puts("how many do you want\n");
+					puts("check it?");
+					cout << "y/n: ";
+					cin >> con;
+
+					switch(con)
+					{
+						case 'y':
+							do
+							{
+								puts("health capsul.");
+								puts("clasic heal item.\n");
+								
+								puts("HP: 30\n");
+								
+								cout << "exit? y/n: ";
+								cin >> con2;
+							}
+							while(con2 == 'n');
+
+						case 'n':
+							puts("how many do you want\n");
 					
 					cout << ':';
 					cin >> quantity;
 					
 					printf("*you buy %d health capsul with price DRP.%d\n\n", quantity, quantity * 1000);
+					break;
+					}
 					break;
 
 				case '2':
@@ -84,10 +108,10 @@ int main()
 		case '2':
 			puts("what do you want\n");
 
-			puts("1. stamina capsul pouch");
-			puts("2. ring exp");
-			puts("3. digital vest");
-			puts("4. heavy armor\n");
+			puts("1. stamina capsul pouch\t price: 10000");
+			puts("2. ring exp\t\t price: 5000");
+			puts("3. digital vest\t\t price: 10000");
+			puts("4. heavy armor\t\t price: 8000\n");
 
 			cout << ':';
 			cin >> buyA;
