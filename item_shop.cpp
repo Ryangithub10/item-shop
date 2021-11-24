@@ -201,7 +201,6 @@ int main()
 	}
 
 	puts("have the nice day!");
-	puts("n");
 
 	return 0;
 }
