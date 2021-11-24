@@ -144,6 +144,36 @@ int main()
 					break;
 			}
 			break;
+
+		case '3':
+			puts("what do you want\n");
+
+			puts("1. X saber");
+			puts("2. cyber cresent");
+			puts("3. neo mp5 gun");
+			puts("4. double neo devil handgun\n");
+
+			cout << ':';
+			cin >> buyW;
+
+			switch(buyW)
+			{
+				case '1':	
+					printf("*you buy X saber\n\n");
+					break;
+
+				case '2':	
+					printf("*you buy cyber cresent\n\n");
+					break;
+
+				case '3':	
+					printf("*you buy neo mp5 gun\n\n");
+					break;
+
+				case '4':
+					printf("*you buy double neo devil handgun\n\n");
+					break;
+			}
 	}
 
 	puts("have the nice day!");
