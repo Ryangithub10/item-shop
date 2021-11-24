@@ -18,6 +18,19 @@ int main()
 	cout << ':';
 	cin >> buy;
 
+	while(buy != '1' && buy != '2' && buy != '3')
+	{
+		puts("please, choice in menu with number\n");
+
+		puts("1. item");
+		puts("2. accessory");
+		puts("3. weapon\n");
+
+		cout << ':';
+		cin >> buy;
+
+	}
+
 	switch(buy)
 	{
 		case '1':
