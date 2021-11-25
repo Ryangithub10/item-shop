@@ -72,15 +72,33 @@ int main()
 						case 'n':
 							puts("how many do you want\n");
 					
-					cout << ':';
-					cin >> quantity;
+							cout << ':';
+							cin >> quantity;
 					
-					printf("*you buy %d health capsul with price DRP.%d\n\n", quantity, quantity * 1000);
+							printf("*you buy %d health capsul with price DRP.%d\n\n", quantity, quantity * 1000);
 					break;
 					}
 					break;
 
 				case '2':
+					puts("check it?");
+					cout << "y/n: ";
+					cin >> con;
+
+					switch(con)
+					{
+						case 'y':
+							do
+							{
+								puts("stamina capsul");
+								puts("clasic recover stamina item\n");
+								puts("SP: +20\n");
+								cout << "exit y/n: ";
+								cin >> con2;
+							} while(con2 == 'n');
+
+					} 
+
 					puts("how many do you want\n");
 
 					cout << ':';
