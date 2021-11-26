@@ -40,7 +40,7 @@ int main()
 			
 			puts("1. health capsul\t price: 1000");
 			puts("2. stamina capsul\t price: 2000");
-			puts("3. instant noodles\t price: 10000");
+			puts("3. indomie goreng\t price: 10000");
 			puts("4. energy drink\t\t price: 15000");
 			puts("5. revive chip\t\t price: 50000\n");
 
@@ -108,6 +108,25 @@ int main()
 					break;
 
 				case '3':
+				  puts("check it?");
+				  cout << "y/n: ";
+					cin >> con;
+
+					switch(con)
+				  {
+				  	case 'y':
+				     do{
+								cout << "indomie goreng" << endl;
+								cout << "the food a million people\n" << endl;
+
+								puts("HP: +80\n");
+
+								cout << "exit y/n: ";
+								cin >> con2;
+
+												} while(con2 == 'n');
+					}
+
 					puts("how many do you want\n");
 
 					cout << ':';
